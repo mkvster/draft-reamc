@@ -5,15 +5,15 @@
         pics: [
             {
                 id: 1,
-                trays: ["Z", "Z", "Z", "Z"]
+                trays: ["A", "Z", "B", "Z"]
             },
             {
                 id: 2,
-                trays: ["Z", "Z", "Z", "Z"]
+                trays: ["Z", "B", "Z", "A"]
             },
             {
                 id: 3,
-                trays: ["Z", "Z", "Z", "Z"]
+                trays: ["A", "B", "A", "B"]
             }
         ]
     };

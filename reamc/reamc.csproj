@@ -278,11 +278,13 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="js\Index.jsx" />
-    <Content Include="js\Frames\Trays\TrayBase.jsx" />
     <Content Include="js\Frames\Trays\TrayZ.jsx" />
     <Content Include="js\Frames\FlexibleFrame.jsx" />
     <Content Include="js\Frames\Pic.jsx" />
     <Content Include="js\Frames\Tray.jsx" />
+    <Content Include="js\Frames\Trays\SimpleRow.jsx" />
+    <Content Include="js\Frames\Trays\TrayA.jsx" />
+    <Content Include="js\Frames\Trays\TrayB.jsx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

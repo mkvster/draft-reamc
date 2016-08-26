@@ -6,14 +6,22 @@ var Tray = React.createClass({
             indexInPic: -1
         }
     },    
+    getTrayClass: function(trayType) {
+        switch(trayType) {
+            case "A" : return TrayA;
+            case "B" : return TrayB;
+        }
+        return TrayZ; 
+    },
     render: function() {
-        var trayWidth = 400;
-        var trayHeight = 10;
-        var trayClassName = "Tray" + this.props.trayType;
+        var trayClass = this.getTrayClass(this.props.trayType);
+        var self = this;
         return (
-            <div style={{width: trayWidth + "px", height: trayHeight + "px"}}>
-                <TrayZ picId={this.props.picId} indexInPic={this.props.indexInPic} />
-            </div>
+            React.createElement(trayClass, 
+            { 
+                picId: self.props.picId, 
+                indexInPic: self.props.indexInPic
+            })
         );
     }
 });
