@@ -8,25 +8,11 @@ var TrayZ = React.createClass({
         }
     },    
     render: function() {
-        var items = [1, 2, 3, 4];
-        var cellWidth = 100;
-        var cellHeight = 25;
-        var cellColor = "LightGreen";
-        var self = this;
-        var listItems = items.map(function(item) {
-          return (
-            <li key={item} className="cell-board-noselect cell-board-row-li" style={{backgroundColor: cellColor}}>
-                  <div className="cell-area" style={{backgroundColor: cellColor, width: cellWidth + "px", height: cellHeight + "px"}}>
-                      {self.props.picId}.{self.props.indexInPic + 1}.{item}
-                  </div>
-            </li>
-          );
-        });
-
         return (
-            <ul className="cell-board-row-ul">
-              {listItems}
-            </ul>
+            <div style={{width: 400 + "px"}}>
+                <SimpleRow cellWidth={100} cellHeight={25} cellNumbers={[1, 2, 3, 4]} />
+                <SimpleRow cellWidth={50} cellHeight={25} cellNumbers={[5, 6, 7, 8, 9, 10, 11, 12]} />
+            </div>
         );
     }
 });
